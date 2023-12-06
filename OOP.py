@@ -4,7 +4,6 @@ from twilio.rest import Client
 from dotenv import load_dotenv
 import os
 import re
-
 # Regular expression pattern for email validation
 email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
 
@@ -109,3 +108,5 @@ if __name__ == "__main__":
     if use_twilio.lower() == 'yes':
         mobile = input('Enter your mobile number: ')
         otp_manager.send_otp_mobile(mobile, otp)
+
+
